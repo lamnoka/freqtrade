@@ -1,0 +1,4 @@
+#download backtest data
+freqtrade download-data --exchange binance --trading-mode futures --pairs BTC/USDT:USDT --timeframes 15m --timerange=20220101-
+
+freqtrade backtesting --strategy BaseStrategy --config user_data/config.json --logfile user_data/logs/log.log -v --timerange=20220101-
